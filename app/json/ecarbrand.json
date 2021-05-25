@@ -1,0 +1,62 @@
+[
+  {
+    "ID": 1,
+    "Name": "Jaguar",
+    "LogoPath": "https://stimg.cardekho.com/pwa/img/brandLogo_168x84/jaguar.jpg",
+    "RedirectionPath": "/jaguar"
+  },
+  {
+    "ID": 2,
+    "Name": "Mercedes Benz",
+    "LogoPath": "https://stimg.cardekho.com/pwa/img/brandLogo_168x84/mercedes-benz.jpg",
+    "RedirectionPath": "/mercedes-benz"
+  },
+  {
+    "ID": 3,
+    "Name": "Tata",
+    "LogoPath": "https://stimg.cardekho.com/pwa/img/brandLogo_168x84/tata.jpg",
+    "RedirectionPath": "/tata"
+  },
+  {
+    "ID": 4,
+    "Name": "Morisson Garage",
+    "LogoPath": "https://stimg.cardekho.com/pwa/img/brandLogo_168x84/mg.jpg",
+    "RedirectionPath": "/mghector"
+  },
+  {
+    "ID": 5,
+    "Name": "Hyundai",
+    "LogoPath": "https://stimg.cardekho.com/pwa/img/brandLogo_168x84/hyundai.jpg",
+    "RedirectionPath": "/hyundai"
+  },
+  {
+    "ID": 6,
+    "Name": "Tesla",
+    "LogoPath": "https://stimg.cardekho.com/pwa/img/brandLogo_168x84/tesla.jpg",
+    "RedirectionPath": "/tesla"
+  },
+  {
+    "ID": 7,
+    "Name": "BMW",
+    "LogoPath": "https://stimg.cardekho.com/pwa/img/brandLogo_168x84/bmw.jpg",
+    "RedirectionPath": "/bmw"
+  },
+  {
+    "ID": 8,
+    "Name": "Audi",
+    "LogoPath": "https://stimg.cardekho.com/pwa/img/brandLogo_168x84/audi.jpg",
+    "RedirectionPath": "/audi"
+  },
+  {
+    "ID": 9,
+    "Name": "Haima",
+    "LogoPath": "https://stimg.cardekho.com/pwa/img/brandLogo_168x84/haima.jpg",
+    "RedirectionPath": "/haima"
+  },
+  {
+    "ID": 10,
+    "Name": "ORA",
+    "LogoPath": "https://stimg.cardekho.com/pwa/img/brandLogo_168x84/ora.jpg",
+    "RedirectionPath": "/ora"
+  }
+]

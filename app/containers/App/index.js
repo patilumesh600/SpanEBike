@@ -7,44 +7,42 @@
  */
 
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import { Switch, Route } from 'react-router-dom';
-
-import HomePage from 'containers/HomePage/Loadable';
-import FeaturePage from 'containers/FeaturePage/Loadable';
-import NotFoundPage from 'containers/NotFoundPage/Loadable';
-import Header from 'components/Header';
-import Footer from 'components/Footer';
-
+// import * as RBS from 'react-bootstrap';
+import Header from 'components/PrimaryHeader';
+import Footer from 'components/PrimaryFooter';
+import LandingPage from 'containers/LandingPage';
+import SearchResult from 'containers/SearchResult';
+import Login from 'containers/Login';
+import Sidebar from 'components/UserLeftMenu';
 import GlobalStyle from '../../global-styles';
 
-const AppWrapper = styled.div`
-  max-width: calc(768px + 16px * 2);
-  margin: 0 auto;
-  display: flex;
-  min-height: 100%;
-  padding: 0 16px;
-  flex-direction: column;
+const ContentSec = styled.div`
+  margin-bottom: 0%;
+  margin-top: 5%;
 `;
 
 export default function App() {
   return (
-    <AppWrapper>
-      <Helmet
-        titleTemplate="%s - React.js zdfdfzd"
-        defaultTitle="React.js Boilerplate"
-      >
-        <meta name="description" content="A React.js Boilerplate application" />
-      </Helmet>
+    <div>
       <Header />
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route path="/features" component={FeaturePage} />
-        <Route path="" component={NotFoundPage} />
-      </Switch>
+      <Sidebar />
+      <ContentSec>
+        <Switch>
+          <Route exact path="/" component={LandingPage} />
+          <Route exact path="/search" component={SearchResult} />
+          <Route exact path="/login" component={Login} />
+        </Switch>
+      </ContentSec>
       <Footer />
+      {/* <RBS.Col xs={2} id="sidebar-wrapper">
+        <Sidebar />
+      </RBS.Col>
+      <RBS.Col xs={10} id="page-content-wrapper">
+        this is a test
+      </RBS.Col> */}
       <GlobalStyle />
-    </AppWrapper>
+    </div>
   );
 }

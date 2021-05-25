@@ -1,0 +1,26 @@
+[
+  {
+    "ID": 1,
+    "Name": "Hyundai Kona Electric",
+    "ImagePath": "https://media.zigcdn.com/media/model/2020/Jun/hyundai-kona_360x240.jpg",
+    "Review": "12",
+    "Rating": "4",
+    "PriceRange": "Rs. 23.77 - 23.96 Lakh"
+  },
+  {
+    "ID": 2,
+    "Name": "Tata nexon",
+    "ImagePath": "https://media.zigcdn.com/media/model/2020/Jun/tata_nexon_ev_right_930x620_360x240.jpg",
+    "Review": "21",
+    "Rating": "4.5",
+    "PriceRange": "Rs. 13.99 - 16.56 Lakh"
+  },
+  {
+    "ID": 3,
+    "Name": "MG ZS EV",
+    "ImagePath": "https://media.zigcdn.com/media/model/2020/Jun/mg-zs-ev_360x240.jpg",
+    "Review": "29",
+    "Rating": "4.3",
+    "PriceRange": "Rs. 20.99 - 24.18 Lakh"
+  }
+]

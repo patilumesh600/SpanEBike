@@ -1,0 +1,26 @@
+[
+  {
+    "ID": 1,
+    "Name": "Ather 450X",
+    "ImagePath": "https://imgd.aeplcdn.com/310x174/bw/models/ather-450x-plus20200928155355.jpg",
+    "MilageDetails": "50 Km, 25 Kmph , 8-10 Hrs",
+    "Showroom": "Ex-showroom, Pune",
+    "ShowroomPrice": "Rs 51,440 onwards"
+  },
+  {
+    "ID": 2,
+    "Name": "Bajaj Chetak",
+    "ImagePath": "https://imgd.aeplcdn.com/310x174/bw/models/bajaj-urbanite-chetak-standard20191016163349.jpg?q=75",
+    "MilageDetails": "70 Km, 50 Kmph , 12-16 Hrs",
+    "Showroom": "Ex-showroom, Pune",
+    "ShowroomPrice": "Rs 81,440 onwards"
+  },
+  {
+    "ID": 3,
+    "Name": "Revolt",
+    "ImagePath": "https://imgd.aeplcdn.com/310x174/bw/models/revolt-rv400.jpg?20191806161943&q=75",
+    "MilageDetails": "90 Km, 80 Kmph , 18-20 Hrs",
+    "Showroom": "Ex-showroom, Pune",
+    "ShowroomPrice": "Rs 1,51,440 onwards"
+  }
+]

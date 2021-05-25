@@ -1,0 +1,51 @@
+.popular-cities__list-item {
+    width: 33.33%;
+    text-align: center;
+    color: #4d5057;
+    margin-bottom: 20px;
+}
+.popular-cities-icon-wrapper{
+  margin-bottom: 5px;
+}
+.location-popup-popular-cities-wrapper {
+  margin-top: 30px;
+}
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+      margin-left: 0;
+    }
+    #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+      margin-left: -15rem;
+    }
+  }
+@media screen and (min-width: 800px){
+  .popular-cities__list-item {
+      width: 20%;
+  }
+  .location-popup-popular-cities-wrapper {
+    margin-left: 28px;
+    margin-right: 28px;
+  }
+}
+.popular-cities__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+.center{
+  text-align:center!important;
+}
+.pheader{
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  top: 0;
+  right: 0;
+  left: 0;
+}

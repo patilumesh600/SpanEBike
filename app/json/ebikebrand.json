@@ -1,0 +1,62 @@
+[
+  {
+    "ID": 1,
+    "Name": "Hero Electric",
+    "LogoPath": "../../images/ebike/hero/herologo.jpg",
+    "RedirectionPath": "/hero"
+  },
+  {
+    "ID": 2,
+    "Name": "Ather",
+    "LogoPath": "https://imgd.aeplcdn.com/110x61/bw/makes/ather20200518163442.jpg",
+    "RedirectionPath": "/ather"
+  },
+  {
+    "ID": 3,
+    "Name": "Joy Ebike",
+    "LogoPath": "https://imgd.aeplcdn.com/110x61/bw/makes/joy-ebike20210106103732.jpg",
+    "RedirectionPath": "/joyebike"
+  },
+  {
+    "ID": 4,
+    "Name": "Lectro",
+    "LogoPath": "https://imgd.aeplcdn.com/110x61/bw/makes/lectro20200508193007.jpg",
+    "RedirectionPath": "/lectro"
+  },
+  {
+    "ID": 5,
+    "Name": "Yo Bike",
+    "LogoPath": "https://imgd.aeplcdn.com/110x61/bw/makes/yo20200508193225.jpg",
+    "RedirectionPath": "/yobike"
+  },
+  {
+    "ID": 6,
+    "Name": "Techno Electra",
+    "LogoPath": "https://imgd.aeplcdn.com/110x61/bw/makes/techo-electra20200508193138.jpg",
+    "RedirectionPath": "/technoelectra"
+  },
+  {
+    "ID": 7,
+    "Name": "Revolt",
+    "LogoPath": "https://imgd.aeplcdn.com/110x61/bw/makes/revolt20200508193107.jpg",
+    "RedirectionPath": "/revolt"
+  },
+  {
+    "ID": 8,
+    "Name": "Pure",
+    "LogoPath": "https://imgd.aeplcdn.com/110x61/bw/makes/pure-ev20201014113440.jpg",
+    "RedirectionPath": "/pure"
+  },
+  {
+    "ID": 9,
+    "Name": "evolet",
+    "LogoPath": "https://imgd.aeplcdn.com/110x61/bw/makes/evolet20200508192755.jpg",
+    "RedirectionPath": "/evolet"
+  },
+  {
+    "ID": 10,
+    "Name": "EVE",
+    "LogoPath": "https://imgd.aeplcdn.com/110x61/bw/makes/eeve20201014113401.jpg",
+    "RedirectionPath": "/eve"
+  }
+]
