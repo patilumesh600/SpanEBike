@@ -54,7 +54,7 @@ function UserLeftMenu() {
       <a href="/">
         <FontAwesomeIcon icon={faCalculator} /> &nbsp;&nbsp;EMI Calculators
       </a>
-      <a href="/">
+      <a href="/login">
         <FontAwesomeIcon icon={faUser} /> &nbsp;&nbsp;Login
       </a>
     </div>

@@ -27,11 +27,11 @@ export function SearchResult() {
   return (
     <RBS.Container fluid style={{ position: 'relative', padding: '0px,15px' }}>
       <RBS.Row>
-        <RBS.Col md={3}>
+        <RBS.Col md={2}>
           <FilterSec />
         </RBS.Col>
         <RBS.Col
-          md={9}
+          md={10}
           style={{ paddingTop: '15px', borderLeft: '1px solid #e1e1e1' }}
         >
           <div style={{ fontSize: '16px' }}>

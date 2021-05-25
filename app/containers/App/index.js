@@ -24,18 +24,34 @@ const ContentSec = styled.div`
 `;
 
 export default function App() {
+  const standAlonePages = ['/login'];
+
   return (
     <div>
-      <Header />
+      {standAlonePages.indexOf(window.location.pathname.toLowerCase()) !==
+      -1 ? null : (
+          <Header />
+        )}
       <Sidebar />
-      <ContentSec>
+      <ContentSec
+        style={{
+          marginTop:
+            standAlonePages.indexOf(window.location.pathname.toLowerCase()) !==
+            -1
+              ? '0'
+              : '5%',
+        }}
+      >
         <Switch>
           <Route exact path="/" component={LandingPage} />
           <Route exact path="/search" component={SearchResult} />
           <Route exact path="/login" component={Login} />
         </Switch>
       </ContentSec>
-      <Footer />
+      {standAlonePages.indexOf(window.location.pathname.toLowerCase()) !==
+      -1 ? null : (
+          <Footer />
+        )}
       {/* <RBS.Col xs={2} id="sidebar-wrapper">
         <Sidebar />
       </RBS.Col>
