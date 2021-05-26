@@ -39,11 +39,12 @@ export function Login() {
           <RBS.Col
             md={{ span: 4, offset: 1 }}
             style={{
-              opacity: '0.96',
+              opacity: '0.92',
               background: '#fff',
               color: '#000',
               marginTop: '5%',
               boxShadow: '0px 0px 10px #5d5d5d',
+              padding: '10px',
             }}
           >
             <UserLogin />

@@ -64,12 +64,27 @@ function UserLogin() {
             Login
           </RBS.Button>
           <br />
-          <RBS.Button variant="primary" type="button" size="md" ali>
+          <RBS.Button
+            style={{
+              width: '49.5%',
+              display: 'inline',
+              marginRight: '1%',
+              marginTop: '0px',
+            }}
+            variant="primary"
+            type="button"
+            block
+            ali
+          >
             &nbsp;Continue with <FontAwesomeIcon icon={faFacebook} />
           </RBS.Button>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <RBS.Button variant="danger" type="button" size="md" ali>
+          <RBS.Button
+            style={{ width: '49.5%', display: 'inline', marginTop: '0px' }}
+            variant="danger"
+            type="button"
+            block
+            ali
+          >
             &nbsp;Continue with <FontAwesomeIcon icon={faGoogle} />
           </RBS.Button>
           <RBS.Form.Group className="text-center">
@@ -84,7 +99,11 @@ function UserLogin() {
             </RBS.Form.Label>{' '}
             &nbsp;&nbsp;&nbsp;
             <RBS.Form.Label>
-              Forgot Password ? <a href="javascript:;" onClick={() => showHideFPassword()}> Click here</a>
+              Forgot Password ?{' '}
+              <a href="javascript:;" onClick={() => showHideFPassword()}>
+                {' '}
+                Click here
+              </a>
             </RBS.Form.Label>
           </RBS.Form.Group>
         </RBS.Form>
