@@ -44,7 +44,7 @@ export function LandingPage() {
   useInjectSaga({ key: 'landingPage', saga });
 
   return (
-    <div style={{ backgroundColor: '#f4f3f3' }}>
+    <div id="divLanding" style={{ backgroundColor: '#f4f3f3' }}>
       <RBS.Container
         fluid
         style={{ position: 'relative', padding: '0px,15px' }}

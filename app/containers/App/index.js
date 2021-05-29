@@ -15,6 +15,7 @@ import Footer from 'components/PrimaryFooter';
 import LandingPage from 'containers/LandingPage';
 import SearchResult from 'containers/SearchResult';
 import Login from 'containers/Login';
+import ViewDetails from 'containers/ViewDetails';
 import Sidebar from 'components/UserLeftMenu';
 import GlobalStyle from '../../global-styles';
 
@@ -46,6 +47,7 @@ export default function App() {
           <Route exact path="/" component={LandingPage} />
           <Route exact path="/search" component={SearchResult} />
           <Route exact path="/login" component={Login} />
+          <Route exact path="/viewdetails" component={ViewDetails} />
         </Switch>
       </ContentSec>
       {standAlonePages.indexOf(window.location.pathname.toLowerCase()) !==
