@@ -16,6 +16,7 @@ import LandingPage from 'containers/LandingPage';
 import SearchResult from 'containers/SearchResult';
 import Login from 'containers/Login';
 import ViewDetails from 'containers/ViewDetails';
+import UserProfile from 'containers/MyProfile';
 import Sidebar from 'components/UserLeftMenu';
 import GlobalStyle from '../../global-styles';
 
@@ -35,6 +36,7 @@ export default function App() {
         )}
       <Sidebar />
       <ContentSec
+        className="main-container"
         style={{
           marginTop:
             standAlonePages.indexOf(window.location.pathname.toLowerCase()) !==
@@ -48,6 +50,7 @@ export default function App() {
           <Route exact path="/search" component={SearchResult} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/viewdetails" component={ViewDetails} />
+          <Route exact path="/userprofile" component={UserProfile} />
         </Switch>
       </ContentSec>
       {standAlonePages.indexOf(window.location.pathname.toLowerCase()) !==

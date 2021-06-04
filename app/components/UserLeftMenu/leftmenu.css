@@ -26,7 +26,8 @@
   
   /* When you mouse over the navigation links, change their color */
   .sidebar a:hover {
-    color: #f1f1f1;
+    color:green;
+    text-decoration: none;
   }
   
   /* Position and style the close button (top right corner) */
@@ -50,4 +51,5 @@
   
   .openbtn:hover {
     background-color: #444;
+    text-decoration: none;
   }

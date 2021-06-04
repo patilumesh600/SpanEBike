@@ -107,10 +107,12 @@ function getUpcomingCarDetails(data) {
       </RBS.Card.Body>
       <RBS.Card.Footer>
         <small className="text-muted">
-          <RBS.Button variant="info" type="button" size="sm">
-            {' '}
-            <FontAwesomeIcon icon={faEye} /> View Details
-          </RBS.Button>
+          <a href="/viewdetails">
+            <RBS.Button variant="info" type="button" size="sm">
+              {' '}
+              <FontAwesomeIcon icon={faEye} /> View Details
+            </RBS.Button>
+          </a>
           &nbsp;&nbsp;&nbsp;
           <RBS.Button variant="success" type="button" size="sm">
             {' '}

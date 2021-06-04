@@ -10,10 +10,6 @@ color:black;
 .center{
     text-align: center;
 }
-.nav-tabs .nav-link.active {
-    border-bottom: 3px solid #28a745 !important;
-    cursor: default;
-}
 .tab-pane{
     padding: 15px;
 }
