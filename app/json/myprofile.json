@@ -7,15 +7,100 @@
     "DateOfBirth":"10-DEC-1990",
     "Age":"31",
     "ImageURL":"https://media.zigcdn.com/media/user/2021/Mar/sanchetirohit120215274940.jpg",
-    "MyBikeDetails":[
-    ],
-    "MyCarDetails":[
-    
+    "FaviouriteVehicle":[
+	 {
+		"ID":1,
+		"ModelCode":"ATHER450X",
+		"Name":"Ather 450X",
+		"Descrption":"",
+		"ImageURL":"https://imgd.aeplcdn.com/310x174/bw/models/bajaj-urbanite-chetak-standard20191016163349.jpg?q=75",
+		"Price":"Rs 51,440 onwards",
+		"Rating":"4.2"
+	 },
+	 {
+		"ID":2,
+		"ModelCode":"REVOLT_RV400",
+		"Name":"Revolt RV 400",
+		"Descrption":"",
+		"ImageURL":"https://imgd.aeplcdn.com/310x174/bw/models/revolt-rv400.jpg?20191806161943&q=75",
+		"Price":"Rs 1,51,440 onwards",
+		"Rating":"4.7"
+	 },
+	 {
+		"ID":3,
+		"ModelCode":"TATANEXON",
+		"Name":"Tata nexon",
+		"Descrption":"",
+		"ImageURL":"https://media.zigcdn.com/media/model/2020/Jun/tata_nexon_ev_right_930x620_360x240.jpg",
+		"Price":"Rs. 13.99 Lakh onwards",
+		"Rating":"4.5"
+	 }
     ],
     "MyReviews":[
-    
+        {
+		"ID":"1" ,
+		"VehicleName":"Ather 450X",
+		"Rating":"4.5","Title":"Change the ride concept",
+		"Review":"Best bike. It is a royal bike,feels like young and energetic, very comfortable and good safety. My dream: revolt. Revolt is my love. Can silencer change bike. Superb royal bike.Best performance. King of roads.",
+		"Date":"07 June 2021",
+		"Milage":"60 to 70 per charge",
+		"VehicleUsage":"Daily",
+		"RatingCriteria":[
+		{"ID":"1" ,"Name":"Visual Appeal","Value":"4"},
+		{"ID":"3" ,"Name":"Performance","Value":"3"},
+		{"ID":"4" ,"Name":"Comfort","Value":"4.5"},
+		{"ID":"5" ,"Name":"Service Experience","Value":"4"},
+		{"ID":"6" ,"Name":"Maintenance cost","Value":"4.5"},
+		{"ID":"7" ,"Name":"Extra Features","Value":"3"}
+		]
+		},
+        {
+		"ID":"2" ,
+		"VehicleName":"Tata nexon",
+		"Rating":"4","Title":"Supper electric Car with nice look",
+		"Review":"I seen this Car on road. Very nice Car and good for drive and no pollution .This Car pollution free this is very good . My dream buy this Car .This Car all city drive and very good for highway . ",
+		"Date":"07 May 2021",
+		"Milage":"30 to 40 per charge",
+		"VehicleUsage":"Occasional",
+		"RatingCriteria":[
+		{"ID":"1" ,"Name":"Visual Appeal","Value":"4"},
+		{"ID":"3" ,"Name":"Performance","Value":"3"},
+		{"ID":"4" ,"Name":"Comfort","Value":"4.5"},
+		{"ID":"5" ,"Name":"Service Experience","Value":"4"},
+		{"ID":"6" ,"Name":"Maintenance cost","Value":"4.5"},
+		{"ID":"7" ,"Name":"Extra Features","Value":"3"}
+		]
+		}
     ],
-    "MyTestRides":[
-    
-    ]
+    "UpcomingTestRides":[
+					{
+						"ID":"1",
+						"BikeDetails":"Ather 450x",
+						"ImageURL":"https://imgd.aeplcdn.com/310x174/bw/models/bajaj-urbanite-chetak-standard20191016163349.jpg?q=75",
+						"BookingDate":"11-JUNE-2021",
+						"BookingTime":"2 to 3 pm",
+						"DealerAddress":"Dhone Automobiles ,New Airport road , Pune , Maharashtra 411028",
+						"BookingStatus":"BOOKED"
+					},
+					{
+						"ID":"2",
+						"BikeDetails":"Tata Nexon",
+						"ImageURL":"https://media.zigcdn.com/media/model/2020/Jun/tata_nexon_ev_right_930x620_360x240.jpg",
+						"BookingDate":"15-JUNE-2021",
+						"BookingTime":"10 to 11 pm",
+						"DealerAddress":"Pandit Automobiles ,Swargate, Pune , Maharashtra 411030",
+						"BookingStatus":"PENDING"
+					}
+    ],
+	"PastTestRides":[
+		{
+			"ID":"1",
+			"BikeDetails":"Bajaj Chetak",
+			"ImageURL":"https://imgd.aeplcdn.com/310x174/bw/models/bajaj-urbanite-chetak-standard20191016163349.jpg?q=75",
+			"BookingDate":"01-JUNE-2021",
+			"BookingTime":"10 to 11 pm",
+			"DealerAddress":"Bajaj Automobiles ,Kothrud, Pune , Maharashtra 411038",
+			"BookingStatus":"COMPLETED"
+		}
+	]
     }

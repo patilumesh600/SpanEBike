@@ -17,7 +17,7 @@ import {
 import { faGifts } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import referimg from '../../images/bgImages/2856741.jpg';
+import referimg from '../../images/bgImages/7121.jpg';
 
 function ReferAndEarn() {
   return (
@@ -28,13 +28,6 @@ function ReferAndEarn() {
         backgroundSize: 'cover',
       }}
     >
-      <RBS.Col className=" text-center shareHeading" md={12} xs={12}>
-        <h2>Tell your friends about us and win exiciting gifts!</h2>
-      </RBS.Col>
-      <div className="clearfix" />
-      <RBS.Col className=" text-center shareIcon" md={12} xs={12}>
-        <FontAwesomeIcon icon={faGifts} />{' '}
-      </RBS.Col>
       <RBS.Col className=" text-center" md={12} xs={12}>
         <RBS.Col
           md={{ span: 4, offset: 4 }}
@@ -47,6 +40,9 @@ function ReferAndEarn() {
           }}
         >
           <RBS.InputGroup>
+            <h6 style={{ color: 'green' }}>
+              Tell your friends about us and win exiciting gifts!
+            </h6>
             <RBS.FormControl
               placeholder="Copy URL"
               aria-label="Copy URL"

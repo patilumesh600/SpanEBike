@@ -25,7 +25,6 @@ function PrimaryFooter() {
         background: '#000',
         color: '#d5d5d5',
         padding: '15px',
-        marginTop: '5%',
       }}
       fluid
     >

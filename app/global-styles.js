@@ -67,6 +67,30 @@ min-height: 100% !important;
 .center{
   text-align:center!important;
 }
+.pad-0{
+  padding:0px!important;
+}
+.pad-5{
+  padding:5px!important;
+}
+.pad-10{
+  padding:10px!important;
+}
+.pad-15{
+  padding:15px!important;
+}
+.pad-20{
+  padding:20px!important;
+}
+.mrg-0{
+  margin:0px!important;
+}
+.mrg-5{
+  margin:5px!important;
+}
+.mrg-10{
+  margin:10px!important;
+}
 `;
 
 export default GlobalStyle;

@@ -1,6 +1,6 @@
 #divUserProfile{
     margin-top: 5%;
-    padding: 15px;
+    padding: 0px;
 }
 .profile-card{
     margin-left: 0px;
@@ -10,12 +10,39 @@
 .prof-tab{
     margin-top:20px;
 }
-.vcl-ctr {
-    background: #fffbec;
-    padding: 0 0 15px 0;
-    margin-bottom: -10px;
+.tab-pane{
+    min-height: 350px;
 }
-.nm-lftTopNwBorder {
-    margin: 14px -10px 0;
-    padding: 15px 10px 5px;
+.left-section-profile{
+    border: '1px solid #e1e1e1';
+    background-color: '#01baef';
+    background-image:'linear-gradient(315deg, #01baef 0%, #20bf55 74%)';
+    min-height: '400px',
+}
+.ngp-header {
+    background: #fffbec url(https://images.zigcdn.com/images/revamp/ngp-img.png) no-repeat center 0;
+    height: 221px;
+    display: table;
+    width: 100%;
+}
+.ngp-header.step6 {
+    height: 112px;
+    background-position: center -108px;
+}
+#garageList{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+.btn-shadow{
+    box-shadow: rgb(226 226 226) 0px 2px 2px, rgb(241 241 241) 0px 1px 1px;
+}
+.remove-fav{
+    position:absolute;
+    right:15px;
+    color: gray;
+}
+.remove-fav:hover{
+    color: black;
+    font-size: 18px;
 }

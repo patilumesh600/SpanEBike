@@ -22,7 +22,7 @@ import GlobalStyle from '../../global-styles';
 
 const ContentSec = styled.div`
   margin-bottom: 0%;
-  margin-top: 5%;
+  margin-top: 0%;
 `;
 
 export default function App() {
