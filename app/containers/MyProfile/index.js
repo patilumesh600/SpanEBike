@@ -19,9 +19,10 @@ import {
   Badge,
   Button,
   Tabs,
+  Accordion,
 } from 'react-bootstrap';
 import {
-  faEdit,
+  faKey,
   faMars,
   faCalendar,
   faEnvelope,
@@ -37,6 +38,11 @@ import {
   faTrash,
   faCalendarTimes,
   faClock,
+  faMeh,
+  faFrown,
+  faSmile,
+  faAngry,
+  faGrinHearts,
 } from '@fortawesome/free-solid-svg-icons';
 import {} from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -48,6 +54,8 @@ import saga from './saga';
 import MyAccount from '../../components/MyAccount';
 import ReferAndEarn from '../../components/ReferAndEarn';
 import ChangePassword from '../../components/ChangePassword';
+import BookTestRide from '../../components/BookTestRide';
+// import MyElectricVehicle from '../../components/MyElectricVehicle';
 import personaldetails from '../../json/myprofile.json';
 import './profile.css';
 
@@ -147,14 +155,14 @@ export function MyProfile() {
                 eventKey="myreview"
                 title={
                   <span>
-                    <span className="hide-xs">My Reviews</span>{' '}
+                    <span className="hide-xs">My Reviews & Garage</span>{' '}
                     {<FontAwesomeIcon icon={faComment} />}
                   </span>
                 }
                 className="prof-tab"
               >
                 <Col md={12}>
-                  <FontAwesomeIcon icon={faEdit} />
+                  {personaldetails.MyReviews.map(data => bindReviews(data))}
                 </Col>
               </Tab>
               <Tab
@@ -186,43 +194,32 @@ export function MyProfile() {
                 className="prof-tab"
               >
                 <Col md={12}>
-                  <Row>
-                    <Col
-                      md={12}
-                      style={{ fontSize: '24px', fontWeight: '500' }}
-                    >
-                      <h5>Upcoming Booking</h5>
-                      <hr
-                        style={{
-                          marginTop: '2px',
-                          borderTop: '1px solid #28a745 ',
-                        }}
-                      />
-                      <span style={{ fontSize: '16px', fontWeight: '500' }}>
-                        {personaldetails.UpcomingTestRides.map(data =>
-                          bindUpcomingTestRides(data),
-                        )}
-                      </span>
-                    </Col>
-                    <Col
-                      md={12}
-                      style={{ fontSize: '24px', fontWeight: '500' }}
-                    >
-                      <h5>Past Booking</h5>
-                      <hr
-                        style={{
-                          marginTop: '2px',
-                          borderTop: '1px solid #28a745 ',
-                          textAlign: 'center',
-                        }}
-                      />
-                      <span style={{ fontSize: '16px', fontWeight: '500' }}>
-                        {personaldetails.PastTestRides.map(data =>
-                          bindUpcomingTestRides(data),
-                        )}
-                      </span>
-                    </Col>
-                  </Row>
+                  <Accordion defaultActiveKey="0" className="pad-0">
+                    <Card>
+                      <Accordion.Toggle as={Card.Header} eventKey="0">
+                        <b>Upcoming Test Rides</b>
+                      </Accordion.Toggle>
+                      <Accordion.Collapse eventKey="0">
+                        <Card.Body>
+                          {personaldetails.UpcomingTestRides.map(data =>
+                            bindUpcomingTestRides(data),
+                          )}
+                        </Card.Body>
+                      </Accordion.Collapse>
+                    </Card>
+                    <Card>
+                      <Accordion.Toggle as={Card.Header} eventKey="1">
+                        <b>Past Test Rides</b>
+                      </Accordion.Toggle>
+                      <Accordion.Collapse eventKey="1">
+                        <Card.Body>
+                          {personaldetails.PastTestRides.map(data =>
+                            bindUpcomingTestRides(data),
+                          )}
+                        </Card.Body>
+                      </Accordion.Collapse>
+                    </Card>
+                  </Accordion>
                 </Col>
               </Tab>
               <Tab
@@ -230,6 +227,7 @@ export function MyProfile() {
                 title={
                   <span>
                     <span className="hide-xs">Change Password</span>{' '}
+                    {<FontAwesomeIcon icon={faKey} />}
                   </span>
                 }
                 className="prof-tab"
@@ -256,6 +254,7 @@ export function MyProfile() {
           </Card>
         </Col>
       </Row>
+      <BookTestRide />
     </div>
   );
 }
@@ -371,6 +370,96 @@ function bindUpcomingTestRides(data) {
         </Row>
       </Col>
     </div>
+  );
+}
+
+function bindReviews(data) {
+  return (
+    <div>
+      <Card id={data.ID}>
+        <Card.Body>
+          <Card.Title>
+            {data.VehicleName}
+            <small style={{ fontSize: '12px' }}>
+              {' '}
+              <Badge pill variant="success">
+                {data.Rating} <FontAwesomeIcon icon={faStar} />
+              </Badge>{' '}
+              {data.Date}
+            </small>
+          </Card.Title>
+          <Row style={{ fontSize: '14px' }}>
+            <Col md={4}>
+              <Row>
+                <Col md={5}>
+                  {' '}
+                  <b>Bike Usage :</b>
+                </Col>
+                <Col md={7}>{data.VehicleUsage} Commute</Col>
+                <Col md={5}>
+                  {' '}
+                  <b>Mileage :</b>
+                </Col>
+                <Col md={7}>{data.Milage} kmph/charge</Col>
+                <Col md={5}>
+                  {' '}
+                  <b>Charge Time :</b>
+                </Col>
+                <Col md={7}>{data.ChargingTime} hrs</Col>
+              </Row>
+            </Col>
+            <Col md={8}>
+              <b>My Reviews : </b> {data.Review}
+            </Col>
+          </Row>
+          <Col md={12} style={{ fontSize: '14px', padding: '0px' }}>
+            <span>
+              <b>My Ratings</b>
+            </span>
+            <hr />
+            <Row>
+              {data.RatingCriteria.map(reviewdata => bindMyratings(reviewdata))}
+            </Row>
+          </Col>
+        </Card.Body>
+      </Card>
+      <br />
+    </div>
+  );
+}
+
+function bindMyratings(data) {
+  let textcolor;
+  let icon;
+  switch (data.Value) {
+    case '1':
+      icon = <FontAwesomeIcon icon={faAngry} />;
+      textcolor = 'red';
+      break;
+    case '2':
+      icon = <FontAwesomeIcon icon={faFrown} />;
+      textcolor = 'red';
+      break;
+    case '3':
+      icon = <FontAwesomeIcon icon={faMeh} />;
+      textcolor = 'yellow';
+      break;
+    case '4':
+      icon = <FontAwesomeIcon icon={faSmile} />;
+      textcolor = 'green';
+      break;
+    case '5':
+      icon = <FontAwesomeIcon icon={faGrinHearts} />;
+      textcolor = 'green';
+      break;
+    default:
+      break;
+  }
+  return (
+    <Col md={2} className="center">
+      <div style={{ color: textcolor, fontSize: '32px' }}>{icon}</div>
+      <span style={{ color: 'gray' }}> {data.Name}</span>
+    </Col>
   );
 }
 

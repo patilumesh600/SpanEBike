@@ -43,15 +43,16 @@
 		"Rating":"4.5","Title":"Change the ride concept",
 		"Review":"Best bike. It is a royal bike,feels like young and energetic, very comfortable and good safety. My dream: revolt. Revolt is my love. Can silencer change bike. Superb royal bike.Best performance. King of roads.",
 		"Date":"07 June 2021",
-		"Milage":"60 to 70 per charge",
+		"Milage":"60 to 70",
 		"VehicleUsage":"Daily",
+		"ChargingTime":"2 to 3",
 		"RatingCriteria":[
 		{"ID":"1" ,"Name":"Visual Appeal","Value":"4"},
 		{"ID":"3" ,"Name":"Performance","Value":"3"},
-		{"ID":"4" ,"Name":"Comfort","Value":"4.5"},
+		{"ID":"4" ,"Name":"Comfort","Value":"5"},
 		{"ID":"5" ,"Name":"Service Experience","Value":"4"},
-		{"ID":"6" ,"Name":"Maintenance cost","Value":"4.5"},
-		{"ID":"7" ,"Name":"Extra Features","Value":"3"}
+		{"ID":"6" ,"Name":"Maintenance cost","Value":"2"},
+		{"ID":"7" ,"Name":"Extra Features","Value":"5"}
 		]
 		},
         {
@@ -60,15 +61,16 @@
 		"Rating":"4","Title":"Supper electric Car with nice look",
 		"Review":"I seen this Car on road. Very nice Car and good for drive and no pollution .This Car pollution free this is very good . My dream buy this Car .This Car all city drive and very good for highway . ",
 		"Date":"07 May 2021",
-		"Milage":"30 to 40 per charge",
+		"Milage":"30 to 40",
+		"ChargingTime":"5 to 6",
 		"VehicleUsage":"Occasional",
 		"RatingCriteria":[
 		{"ID":"1" ,"Name":"Visual Appeal","Value":"4"},
 		{"ID":"3" ,"Name":"Performance","Value":"3"},
-		{"ID":"4" ,"Name":"Comfort","Value":"4.5"},
-		{"ID":"5" ,"Name":"Service Experience","Value":"4"},
-		{"ID":"6" ,"Name":"Maintenance cost","Value":"4.5"},
-		{"ID":"7" ,"Name":"Extra Features","Value":"3"}
+		{"ID":"4" ,"Name":"Comfort","Value":"5"},
+		{"ID":"5" ,"Name":"Service Experience","Value":"2"},
+		{"ID":"6" ,"Name":"Maintenance cost","Value":"5"},
+		{"ID":"7" ,"Name":"Extra Features","Value":"1"}
 		]
 		}
     ],
